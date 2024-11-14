@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class JanelaCadastro extends JFrame {
-    private Estoque estoque;
+    private final Estoque estoque;
 
     public JanelaCadastro() {
         estoque = new Estoque();

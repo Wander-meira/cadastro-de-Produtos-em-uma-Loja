@@ -3,7 +3,7 @@ package estoque;
 import java.util.ArrayList;
 
 public class Estoque {
-    private ArrayList<Produto> produtos;
+    private final ArrayList<Produto> produtos;
 
     // inicia lista de produtos
     public Estoque() {

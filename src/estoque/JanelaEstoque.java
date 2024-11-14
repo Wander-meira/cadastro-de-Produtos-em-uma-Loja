@@ -5,19 +5,22 @@ import java.awt.*;
 public class JanelaEstoque extends JFrame {
 
     public JanelaEstoque(Estoque estoque) {
-        // Configs da janela de estoque
+        // Configs do Frame
         setTitle("Estoque Atual");
-        setSize(300, 200);
+        setSize(700, 200);
         setLayout(new BorderLayout());
 
+        // texto para mostrar os prods
         JTextArea areaProdutos = new JTextArea();
         areaProdutos.setEditable(false);
 
-        // adding produtos do estoque
+        // Add os produtos na área de texto
         for (Produto produto : estoque.getProdutos()) {
             areaProdutos.append(produto.toString() + "\n");
         }
 
-        add(new JScrollPane(areaProdutos), BorderLayout.CENTER);
+        // Add a área de texto dentro de um painel
+        JScrollPane painelRolagem = new JScrollPane(areaProdutos);
+        add(painelRolagem, BorderLayout.CENTER);
     }
 }

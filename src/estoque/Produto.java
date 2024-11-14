@@ -5,13 +5,14 @@ public class Produto {
     private double preco;
     private int quantidade;
 
+    // atributos do produto
     public Produto(String nome, double preco, int quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
     }
 
-    // get e set info dos produtos
+    // get infos dos produtos
     public String getNome() {
         return nome;
     }
